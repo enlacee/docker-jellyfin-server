@@ -1,0 +1,12 @@
+# .gitignore
+/jellyfin/cache/*
+!/jellyfin/cache/.gitkeep
+
+/jellyfin/config/*
+!/jellyfin/config/.gitkeep
+
+/jellyfin/media/*
+!/jellyfin/media/.gitkeep
+
+/jellyfin/media2/*
+!/jellyfin/media2/.gitkeep

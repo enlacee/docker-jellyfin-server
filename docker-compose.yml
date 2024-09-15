@@ -1,0 +1,14 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    # user: uid:gid (not working for my but ideal code to use)
+    user: "1000:1001"
+    network_mode: 'host'
+    volumes:
+      - ./jellyfin/config:/config
+      - ./jellyfin/cache:/cache
+      - ./jellyfin/media:/media
+      - ./jellyfin/media2:/media2
+    restart: 'unless-stopped'
+    # Optional - alternative address used for autodiscovery
